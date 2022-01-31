@@ -258,17 +258,8 @@
     transition: .5s;
 }
 
-.service-item:hover {
-    margin-top: -10px;
-    background: var(--primary);
-}
-
 .service-item * {
     transition: .5s;
-}
-
-.service-item:hover * {
-    color: var(--light) !important;
 }
 
 
@@ -432,3 +423,22 @@
     padding-right: 0;
     border-right: none;
 }
+
+/*** count down***/
+/* general styling */
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  
