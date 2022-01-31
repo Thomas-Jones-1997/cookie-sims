@@ -104,6 +104,37 @@
             }
         }
     });
-    
+
+
+    // Testimonials carousel
+    $(".card-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        center: true,
+        margin: 20,
+        items: 3,
+        dots: true,
+        loop: true,
+        nav : true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        },
+        navText : [
+            '<i class="fas fa-chevron-circle-left"> Previous</i>',
+            '<i class="fas fa-chevron-circle-right"> Next</i>'
+        ]
+
+        
+        
+    });
+
 })(jQuery);
 
