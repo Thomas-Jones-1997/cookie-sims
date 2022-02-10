@@ -132,62 +132,39 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <iframe src="https://player.twitch.tv/?channel=thesims&parent=thomas-jones-1997.github.io/cookie-sims/" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-                    </div>
+   <!-- About Start -->
+   <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed"></div>
+
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+<script type="text/javascript">
+new Twitch.Player("twitch-embed", {
+width: "100%",
+height: "360",
+channel: "thesims"
+});
+</script>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">Streams</h6>
-                    <h1 class="mb-4">Offical Sims Stream</h1>
-                    <p class="mb-4">Watch live or catch up on a recent stream from Maxis on YouTube</p>
-                    <p class="mb-4">The current stream is a past stream on the recent update to Spa Day known as the Spa Day refresh. This gave users new items within the pack as a free update if you already owned the pack.</p>
-                    <div class="row gy-2 gx-4 mb-4">
-                       <h6>Whats New?</h6> 
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>New Massage Tables With Additional Functionality</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>New Yoga Mats With Additional Functionality</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>New Massage Chairs With Additional Functionality</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Manicures And Pedicures</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Make Money From Wellness</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Three New Aspirations And A New Trait</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>New Unisex, All-Age Tracksuit</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>New Swatches For Spa Items</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>New Shelves And Nail Care Clutter Items</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Face Masks And Mini-Fridges</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Meditation Cushions</p>
-                        </div>
-                    </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">Streams</h6>
+                <h1 class="mb-4">Offical Sims Stream</h1>
+                <p class="mb-4">Watch live or catch up on a recent stream from Maxis on Twitch</p>
+                <p class="mb-4">If you like to chat to fellow Sims please watch direct on the Twitch site.</p>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="https://www.twitch.tv/thesims">Take me to Twitch</a>
             </div>
         </div>
     </div>
-    <!-- About End -->
+</div>
+<!-- About End -->
 
     <!-- Categories Start -->
     <div class="container-xxl py-5 category">
